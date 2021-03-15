@@ -5,9 +5,72 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  background-image: linear-gradient(to top right, rgb(11, 18, 99), rgb(11, 28, 94), rgb(10, 38, 89), rgb(10, 49, 83), rgb(10, 59, 78), rgb(10, 69, 73), rgb(9, 79, 68), rgb(9, 89, 63), rgb(9, 99, 58), rgb(9, 110, 52), rgb(8, 120, 47), rgb(8, 130, 42));
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+*{
+  box-sizing: border-box;
+}
+.header {
+  padding: 100px 0;
+}
+
+.toDoList {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 50px;
+  background: rgba(255,255,255, 0.1);
+  border-radius: 30px;
+}
+
+.form-text {
+  color: #fcfff4;
+  font-size: 24px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.newPost {
+  padding: 15px;
+  width: 70%;
+  border-bottom-left-radius: 30px;
+  border-top-left-radius: 30px;
+  border: none;
+  transition: all .5s ease;
+
+}
+
+.newPost:hover {
+  box-shadow: inset 0px 1px 16px 10px rgba(0,0,0, .5);
+
+}
+
+.form-btn {
+  width: 30%;
+  padding: 15px;
+  border: none;
+  cursor: pointer;
+  background-color: #0a4549;
+  color: #fcfff4;
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  transition: all .5s ease;
+}
+
+.form-btn:hover {
+  box-shadow: inset 1px 1px 14px rgba(255,255,255, .5);
+
+}
+
+::-webkit-input-placeholder {
+  color:#c0392b;
+  text-align: center;
+  font-size: 18px;
 }

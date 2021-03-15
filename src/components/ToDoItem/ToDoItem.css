@@ -1,0 +1,58 @@
+.blockInput{
+    margin-bottom: 10px;
+    background: rgba(212,212,153, 0.4);
+    border-radius: 20px;
+    padding-right: 55px;
+    padding-left: 30px;
+    position: relative;
+}
+
+.inputList {
+    display: none;
+}
+
+.textLabel {
+    color: #fafafa;
+    font-size: 20px;
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.textLabel input {
+    position: relative;
+    z-index: -9999;
+}
+
+.textLabel span {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 0.25em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.textLabel input:checked + span {
+    border-color: #0b76ef;
+    background-color: #0b76ef;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+
+}
+.textLabel input:checked + span:before{
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    background: linear-gradient(90deg, rgba(34,42,34,.5) 0%, rgba(16,68,11,.5) 54%, rgba(11,118,239,.5) 100%);
+    border-radius: 20px;
+}
